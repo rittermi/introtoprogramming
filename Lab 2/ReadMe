@@ -1,2 +1,26 @@
 ...
 I went in on Monday to complete the lab and got as far as the reading the five longest sentences in the work. In class, I tried to get the updated version of the text, but when I did that, it did something strange to all of my work. Functions that I'd defined were weird and I closed the program to reload it to my last save point on Monday. When I re-opened it, all of my work was gone. I knew we were going to work on some stuff in class, so I hadn't pushed the lab to git. 
+When I tried to push the file to github, it had a star on the name of the file, and it wouldn't save. I took a screen shot and will copy the cell directions.
+# [2-1] ON YOUR OWN:
+
+
+
+# Choose a text that was not previously analyzed above from Project Gutenberg.
+# 1. Write code that retrieves and writes the text to a file in the current project. You may save it to any file, but I recommend to save it to the lab2 subdirectory.
+
+# This wasn't so bad. I used the code given in the example and called the file using the file name and finding the number on the project Gutenberg website. I saved Frankenstein to my computer and called it in.
+
+# 2. Write code that retrieves the text (if downloaded) and saves it to a variable. 
+#I changed the function read to write in the sample file. I also replaced the 'r' to 'w' (I think). 
+
+# 3. Create a TextBlob from the variable above. This may involve locating the end of the header. 
+# Save the resulting TextBlob for use in the following cells. 
+# I imported the textblob using the example given and fiddled with printing the length of the shown text. It ended up getting rid of the header and index page. It was something along the lines of [(len) 16733:] to get only the body of the novel. It was annoying because the text was clearly too long to print the whole thing in vs code.
+
+# [2-2] ON YOUR OWN:
+
+# Write code that finds the top 5 longest sentences in the work. You may store or display them however you choose, and you may build off of the code above that finds the longest sentence. 
+# I struggled to find a way to have the code stop dismissing the next longest sentence. I know that the code was finding the max longest sentence, searching the next in sequence, and if it was longer, kept it, and if it wasn't, to discard it. 
+#Trying tuples as lists absolutely would have worked for this, but I couldn't figure out how to write the code that would read the sentences in the text as tuples.
+#Instead, I called the function to print the list of number of words in ascending order(doing it in descending would have been better in hindsight). I saw that the sentences that were the longest had something along the lines of 157(?) words. But there were more than five of them. When I saw that I did that, I was able to tell it to print(key, sentence). Then I scrolled to the bottom and looked at those sentences. Not the fastest way, but it did let me see it as list. Also, there were more than five sentences that had the same number of words. To get the top five, it might have been possible to write a second if loop looking at the number of characters within those with the most words and call the top five from there. 
+#Thank you for the help. Sorry for the weirdness~

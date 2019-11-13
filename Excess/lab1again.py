@@ -179,7 +179,7 @@ def exclaim():
     return "!"
 
 print('Hello World'+ exclaim())
-x = exclaim()
+
     
     
 #%% [markdown]

@@ -1,0 +1,42 @@
+
+image silk = "silk.jpg"
+image spice = "cassia.jpg"
+image market = "merchant.jpg"
+image route = "route.jpg"
+image teamerchant = "teaman.jpg"
+image tea = "teafield.jpg"
+
+define tm = Character("Tea Merchant")
+define slkm = Character("Silk Merchant")
+define spcm = Character("Spice Merchant")
+define cd = Character("Caravan Driver")
+
+label start:
+    scene market
+    "You are about to make your way along one of the routes of the Silk Road to sell your wares. What are you selling?"
+
+    menu:
+        "Silk":
+            jump silk
+        "Tea":
+            jump tea
+        "Spices":
+            jump spices
+    label silk:
+        scene silk
+
+        slkm "Excellent choice! China began using silk as a currency during the Han Dynasty and China kept the process of making it a secret for hundreds of years."
+        jump travel
+    label tea:
+        scene tea
+        show teamerchant at right
+        tm "Awesome! Tea is China's oldest export. People had to boil water to kill any pathogens that might be living in the water and adding tea leaves greatly improves the flavor."
+        jump travel
+    label spices:
+        scene spice
+
+        spcm "The world was driven by the spice trade for centuries. One popular spice from China is called 'cassia'. It's similar to cinnamon."
+        jump travel
+    label travel:
+        scene route
+        cd "While most people do not travel the whole silk road, you're ambitious. Here are cities you'll be stopping in including your current location, Xian."

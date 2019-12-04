@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 78: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump oasis
+    ^
+
+File "game/script.rpy", line 83: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump oasis
+    ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Wed Dec 04 16:12:54 2019

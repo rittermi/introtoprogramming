@@ -194,8 +194,7 @@ x = exclaim()
 #  the arguments anything you want
 def multiply_2(variable1, variable2):
     result=[variable1*variable2]
-    print(result)
-    
+    return(result)
 
     
 
@@ -375,7 +374,7 @@ def sum_random(num):
     x = 0
     for value in range(1, num):
         x = x + random.randint(1, 100)
-        return x
+    return x
         
         
         

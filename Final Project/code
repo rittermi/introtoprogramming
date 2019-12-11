@@ -17,6 +17,10 @@ define slkm = Character("Silk Merchant")
 define spcm = Character("Spice Merchant")
 define cd = Character("Caravan Driver")
 
+define number = (renpy.random.randint(20, 100))
+define homecasualty = (renpy.random.randint(1, 10))
+define awaycasualty = (renpy.random.randint(1, 10))
+
 init:
     pass
 
@@ -74,11 +78,14 @@ label start:
         scene fight
         "You manage to fight them off with some bloodshed on both sides"
         "Your merchandise it all accounted for"
+        "[homecasualty] people in your caravan died"
+        "You found [awaycasualty] raiders among the dead"
         jump oasis
     label talk:
         scene barter
         "You manage to convince them to spare you by giving up some of your merchandise"
         "No one is harmed"
+        "You lost [number] yuan worth of merchandise"
         jump oasis
     label oasis:
         scene oasis

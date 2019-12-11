@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 22, in script
+    define number = (renpy.random.randint(10, 15, 20))
+  File "game/script.rpy", line 22, in <module>
+    define number = (renpy.random.randint(10, 15, 20))
+TypeError: randint() takes exactly 3 arguments (4 given)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 22, in script
+    define number = (renpy.random.randint(10, 15, 20))
+  File "C:\Users\14079\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 2108, in execute
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Users\14079\Downloads\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 22, in <module>
+    define number = (renpy.random.randint(10, 15, 20))
+TypeError: randint() takes exactly 3 arguments (4 given)
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+Silk Road the third 1.0
+Wed Dec 11 17:29:15 2019

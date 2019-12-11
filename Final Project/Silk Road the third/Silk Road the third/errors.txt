@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 24: is not terminated with a newline. (Check strings and parenthesis.)
+    define awaycasualty = (renpy.random.randint(1, 10)
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Wed Dec 11 17:35:11 2019

@@ -1,0 +1,8 @@
+#Hooray! 
+# The game now chooses a random number after the choice after the mongol section.
+#If they choose to talk, they lose a certain quantity of merchandise range 20-100.
+#If they fight, both sides have a number of casualties ranging from 1-10.
+#I'll have to do some more research to determine an historically accurate value for each of these.
+#I also noticed that I did not have to use the $, which was nice, but made my code fail a few time.
+#Also, the function doesn't work when you try to make it a string plus an integer. Trying to do this first created a seried of syntax and parenthesis errors.
+#Mostly I was giving it too many variables. Whoops.
